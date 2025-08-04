@@ -12,8 +12,21 @@ resource "aws_vpc" " VPC_Cloud " {
   
 }
 resource "aws_subnet" "public_subnet" {
-  vpc_id                  = aws_vpc.main_vpc.id
+  vpc_id                  = aws_vpc.VPC_Cloud.id
   cidr_block              = "10.0.1.0/24"
   availability_zone       = "us-east-1a"  # Change based on your region
   map_public_ip_on_launch = true
+
+  tags = {
+    Name = "public-subnet"
+  }
+  }
+  resource "aws_subnet" "private_subnet" {
+  vpc_id                  = aws_vpc.VPC.Cloud.id
+  cidr_block              = "10.0.1.0/24"
+  availability_zone       = "us-east-1a"  # Change based on your region
+  map_public_ip_on_launch = true
+  tags = {
+    Name = "private-subnet"
+  }
   }
