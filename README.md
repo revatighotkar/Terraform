@@ -11,6 +11,9 @@ Passed actual values through a Values.tfvars file
 
 This helped me secure AWS credentials and sensitive data, while keeping the code clean and reusable.
 
+📁 You can see all the important Terraform files in my local setup – including main.tf, variables.tf, values.tfvars, and .gitignore.
+
+<img width="657" height="340" alt="image" src="https://github.com/user-attachments/assets/503ceb47-8f16-485e-9a27-a41d24a0010a" />
 
 
 
