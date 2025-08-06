@@ -3,22 +3,20 @@ variable "Aws_region" {
 
 }
 variable "cidr_block1" {
-  type = string
+  
 
 
 }
 
 
 variable "cidr_block2" {
-  type = string
-
+  
 
 
 }
 
 variable "cidr_block3" {
-  type = string
-
+  
 }
 
 variable "availability_zone1" {
