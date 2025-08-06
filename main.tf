@@ -47,3 +47,14 @@ resource "aws_internet_gateway" "igw" {
     Name = "main-igw"
   }
 }
+
+resource "aws_instance" "aws_instance" {
+  ami           = var.ami_id
+  instance_type = var.instance_type
+  subnet_id     = aws_subnet.public_subnet.id
+
+  tags = {
+    Name = "IGW-Test_instance"
+  }
+
+}
