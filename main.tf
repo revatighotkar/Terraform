@@ -48,7 +48,7 @@ resource "aws_internet_gateway" "igw" {
   }
 }
 
-resource "aws_instance" "aws_instance" {
+resource "aws_instance" "Ec2_instance" {
   ami           = var.ami_id
   instance_type = var.instance_type
   subnet_id     = aws_subnet.public_subnet.id
