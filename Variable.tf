@@ -19,6 +19,15 @@ variable "cidr_block3" {
 
 }
 
+variable "cidr_block4" {
+
+}
+variable "key_name" {
+  type        = string
+  description = "The name of the key pair to use for the EC2 instance"
+
+}
+
 variable "availability_zone1" {
   type = string
 
