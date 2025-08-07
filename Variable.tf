@@ -51,3 +51,12 @@ variable "instance_type" {
   type    = string
   default = "t2.micro"
 }
+variable "backend_bucket" {
+  description = "Name of the S3 bucket"
+  type    = string
+  
+}
+variable "dynamodb_table_name"{
+  description = "DynamoDB"
+  type        = string
+  }
