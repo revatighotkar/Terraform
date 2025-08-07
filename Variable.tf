@@ -22,9 +22,12 @@ variable "cidr_block3" {
 }
 
 variable "cidr_block4" {
-type    = list(string)
-
+  description = "CIDR blocks allowed for SSH"
+  type        = list(string)
+  
 }
+
+
 variable "key_name" {
   type        = string
   description = "The name of the key pair to use for the EC2 instance"
