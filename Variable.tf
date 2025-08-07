@@ -24,7 +24,7 @@ variable "cidr_block3" {
 variable "cidr_block4" {
   description = "CIDR blocks allowed for SSH"
   type        = list(string)
-  
+
 }
 
 
@@ -53,10 +53,10 @@ variable "instance_type" {
 }
 variable "backend_bucket" {
   description = "Name of the S3 bucket"
-  type    = string
-  
+  type        = string
+
 }
-variable "dynamodb_table_name"{
+variable "dynamodb_table_name" {
   description = "DynamoDB"
   type        = string
-  }
+}
