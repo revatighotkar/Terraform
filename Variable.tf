@@ -6,6 +6,7 @@ variable "cidr_block1" {
 
 
 
+
 }
 
 
@@ -17,9 +18,11 @@ variable "cidr_block2" {
 
 variable "cidr_block3" {
 
+
 }
 
 variable "cidr_block4" {
+type    = list(string)
 
 }
 variable "key_name" {
