@@ -13,11 +13,12 @@ resource "aws_security_group" "ec2_sg" {
 
   ingress {
     description = "HTTP from anywhere"
-    from_port   = 443
-    to_port     = 443
+    from_port   = 8080
+    to_port     = 8080
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
+  
 
   egress {
     description = "Allow all outbound traffic"
